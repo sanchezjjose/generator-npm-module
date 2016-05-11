@@ -1,0 +1,20 @@
+{
+  "name": "generator-npm-module",
+  "version": "0.0.1",
+  "description": "A generator for npm modules",
+  "files": [
+    "generators/app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "github": "0.2.4",
+    "mkdirp": "^0.5.1",
+    "simple-git": "^1.22.0",
+    "yeoman-generator": "^0.20.3",
+    "yosay": "^1.1.1"
+  }
+}
+

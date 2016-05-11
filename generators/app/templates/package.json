@@ -1,0 +1,28 @@
+{  
+  "name": "<%= answers['module:name'] %>",
+  "version": "0.0.1",
+  "description": "<%= answers['module:description'] %>",
+  "author": "",
+  "main": "index.js",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5",
+    "mocha-multi": "^0.8.0",
+    "istanbul": "^0.4.2"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "watch": "nodemon --ext js --watch ./ --exec 'mocha'",
+    "cover": "istanbul cover _mocha -- --timeout 30000 test/**/*.js",
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "build": "npm run lint && npm run test"
+  }
+}
