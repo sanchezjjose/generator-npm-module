@@ -1,6 +1,6 @@
 # NPM Module Generator
 
-Scaffolds an NPM Module
+Scaffolds an NPM Module that supports ES6, and uses eslint, istanbul and mocha.
 
 ## Getting started
 Make sure you have [yeoman](https://github.com/yeoman/yo) installed, simply run anywhere:
@@ -14,6 +14,17 @@ You can not run this command with _sudo_. Open a new terminal tab and run this c
 ```bash
 npm install -g generator-npm-module
 ```
+
+## GitHub
+This generator will also create a GitHub repository for you if you desire. For this to work, you will need to generate an GitHub access token and set it to your environment variables before running this generator.
+
+- Go to your github settings
+- Click the ```Personal access tokens``` preference
+- Click ```Generate new token```
+- Select the ```repo > public_repo``` option
+- Copy the generated access token and add it to your environment variables
+
+Read more here: https://developer.github.com/v3/repos/#create
 
 ## Updating the generator
 ```bash
